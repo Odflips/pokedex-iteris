@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .lista{
@@ -21,6 +26,11 @@
     height: 73%;
     padding: 20px 0;
     text-align: center;
+    font-family: 'DynaPuff', cursive;
+    font-size: 26px;
+    background: rgb(33,147,237);
+background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 50%, rgba(174,243,245,1) 100%);
+    
     
 }
 
@@ -39,12 +49,15 @@
 .pokeContent{
     width: 50%;
     height: 60%;
+   
 }
 
 .image{
     height: 250px;
     cursor: pointer;
     transition: transform .5s;
+    margin-left: 100px;
+    
 }
 
 .image:hover{
@@ -55,6 +68,7 @@
     width: 50%;
     height: 40%;
     margin-top: 30px;
+    
 }
 
 .stats .barra{
@@ -69,6 +83,75 @@
 .pokeNome:hover{
     background-color: rgba(21, 21, 247, 0.541);
     color: white;
+}
+
+.btns{
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btns2{
+    
+    padding: 5px 20px;
+    cursor: pointer;
+    
+    border-top: ridge;
+    border-bottom: ridge;
+    border-left: ridge;
+    border-right: ridge;
+    
+   
+    transition: transform .3s;
+}
+
+.btn{
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-top: ridge;
+    border-bottom: ridge;
+    border-left: ridge;
+    border-right: ridge;
+    background-color: rgb(79, 79, 245);
+    color: white;
+    transition: transform .3s;
+
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.pokemonNome{
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.infoNome{
+    width: 200px;
+    text-align: center;
+}
+
+.barra{
+    width: 220px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-top: groove;
+    border-bottom: groove;
+    border-left: groove;
+    border-right: groove;
+    position: relative;
+    left: 25%;
+}
+
+.dados{
+    background: greenyellow;
 }
 
 

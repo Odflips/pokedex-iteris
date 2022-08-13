@@ -71,7 +71,7 @@ function App() {
 
   
   return (
-     <div className="fundo">
+     <div className="fundo" style={{backgroundImage: "url(" + fundo + ")"}}>
 
       <div className="lista">
         {
@@ -101,11 +101,11 @@ function App() {
           <div className="pokeContent">
             <img className="image" src={img} alt={img} onclick={(e)=> handleImage(e.target.src)}/>
             <div className="nome">
-              <div className="pekenonNome">{info.name}</div>
-              <div className="btns2">
+              <div className="pokemonNome">{info.name}</div>
+              <div className="btns">
                 {
                   types.map((item)=>(
-                    <button className="btns">{item.type.name}</button>
+                    <button className="btns2">{item.type.name}</button>
                   ))
                 }
               </div>
@@ -116,14 +116,14 @@ function App() {
           <div className="stats">
             {
               base.slice(0,3).map((item)=>(
-                <div className="barra"><div className="dados1" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
+                <div className="barra"><div className="dados" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
 
               ))
             }
 
             {
               base.slice(5).map((item)=>(
-                <div className="barra"><div className="dados2" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
+                <div className="barra"><div className="dados" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
               ))
 
             }
