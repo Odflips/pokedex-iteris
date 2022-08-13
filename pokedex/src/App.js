@@ -73,11 +73,11 @@ function App() {
   return (
      <div className="fundo">
 
-      <div className="nomes">
+      <div className="lista">
         {
           pokemos && pokemos.map((item) =>(
             <>
-            <div className="nome" onClick={(e)=>handleinfo(item.url)}>{item.name}</div>
+            <div className="pokeNome" onClick={(e)=>handleinfo(item.url)}>{item.name}</div>
             
             
             
@@ -97,10 +97,10 @@ function App() {
 
       {
         show?
-        <div className="info">
-          <div className="infoContent">
+        <div className="poke">
+          <div className="pokeContent">
             <img className="image" src={img} alt={img} onclick={(e)=> handleImage(e.target.src)}/>
-            <div className="infoNome">
+            <div className="nome">
               <div className="pekenonNome">{info.name}</div>
               <div className="btns2">
                 {
@@ -113,7 +113,7 @@ function App() {
 
           </div>
 
-          <div className="progress">
+          <div className="stats">
             {
               base.slice(0,3).map((item)=>(
                 <div className="barra"><div className="dados1" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
