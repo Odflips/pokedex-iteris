@@ -22,7 +22,7 @@ function App() {
   const [show, setShow] = useState(false)
   const [count, setCount] = useState(1)
   const [fundo, setFundo] = useState(false)
-  const [pokedex, setPokedex] = useState("")
+  const pokedex = document.querySelector('.lista')
  
 
   const handleNext = () => {
@@ -66,9 +66,14 @@ function App() {
       setFundo(src)
       setCount(1)
       setShow(false)
-      setPokedex(pokedex.style.display === 'none')
+      pokedex.style.display = 'none';
+      
       
     } 
+      
+     
+      
+    
 
    
   }
