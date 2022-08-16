@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import logo from './assets/pokedex.png'
+import Detalhe from './components/Detalhe';
 
 
 
@@ -21,6 +22,8 @@ function App() {
   const [show, setShow] = useState(false)
   const [count, setCount] = useState(1)
   const [fundo, setFundo] = useState(false)
+  const [pokedex, setPokedex] = useState("")
+ 
 
   const handleNext = () => {
     setUrl(next)
@@ -63,7 +66,11 @@ function App() {
       setFundo(src)
       setCount(1)
       setShow(false)
-    }
+      setPokedex(pokedex.style.display === 'none')
+      
+    } 
+
+   
   }
 
 
@@ -78,9 +85,7 @@ function App() {
     
   <div className="fundo" style={{backgroundImage: "url(" + fundo + ")"}}>
 
-      <div className='boxlogo'>
-        <img className='logopokedex' src={logo} />
-      </div>
+      <Detalhe />
 
     <div className='pokedex'>
       <div className="lista">

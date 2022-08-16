@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import './App.css';
-import React from 'react';
+import '../App.css';
+
+import logo from '../assets/pokedex.png'
 
 
 
@@ -8,10 +9,9 @@ import React from 'react';
 const Detalhe =() => {
 
   return (
-    <div > 
-            
-
-          </div>
+    <div className='boxlogo'>
+        <img className='logopokedex' src={logo} />
+      </div>
   )
 }
 

@@ -20,6 +20,7 @@ body{
     background-position: center;
     align-items: center;
 justify-content: center;
+
     
     
     
@@ -42,6 +43,13 @@ justify-content: center;
 .logopokedex{
     height: 200px;
    margin-left: 30%;
+   transition: transform .5s;
+   
+
+}
+
+.logopokedex:hover{
+    transform: scale(1.2);
 }
 
 .lista{
@@ -66,6 +74,10 @@ background: linear-gradient(52deg, rgba(255,0,0,1) 17%, rgba(250,72,72,1) 50%, r
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: #f99718;
+    background-image: linear-gradient(62deg, #f99718 0%, #fceac3 100%);
+    
+
     
 }
 
@@ -166,6 +178,10 @@ background: linear-gradient(52deg, rgba(255,0,0,1) 17%, rgba(250,72,72,1) 50%, r
     transform: scale(1.2);
 }
 
+.poke:active{
+    transition-delay: 2s ;
+}
+
 .pokemonNome{
     margin-top: 20px;
     font-size: 20px;
@@ -194,6 +210,58 @@ background: linear-gradient(52deg, rgba(255,0,0,1) 17%, rgba(250,72,72,1) 50%, r
 
 .dados{
     background: greenyellow;
+}
+
+@media screen and (max-width: 800px){
+    .pokedex{
+        display: flex;
+        flex-direction: column;
+        
+
+    
+    }
+
+    .fundo{
+        height: 100%;
+    }
+
+    .boxlogo{
+        margin-bottom: 3px;
+    }
+
+    .logopokedex{
+        height: 100px;
+        margin-left: 10px;
+    }
+
+    .lista{
+        width: 300px;
+    }
+
+    .poke{
+        width: 260px ;
+    }
+
+    .image{
+        height: 150px;
+        margin-left: -8px;
+    
+    }
+
+    .stats{
+        margin-right: -90px;
+    }
+
+    .stats2{
+        top: 196%;
+        left: 20%;
+    }
+
+    .barra{
+        width: 100px;
+    }
+
+
 }
 
 
