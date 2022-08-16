@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import logo from './assets/pokedex.png'
 
 
 
@@ -58,7 +59,7 @@ function App() {
 
   const handleImage =(src)=>{
     setCount(count + 1)
-    if(count ==3){
+    if(count === 3){
       setFundo(src)
       setCount(1)
       setShow(false)
@@ -71,8 +72,17 @@ function App() {
 
   
   return (
-     <div className="fundo" style={{backgroundImage: "url(" + fundo + ")"}}>
 
+    
+
+    
+  <div className="fundo" style={{backgroundImage: "url(" + fundo + ")"}}>
+
+      <div className='boxlogo'>
+        <img className='logopokedex' src={logo} />
+      </div>
+
+    <div className='pokedex'>
       <div className="lista">
         {
           pokemos && pokemos.map((item) =>(
@@ -98,8 +108,8 @@ function App() {
       {
         show?
         <div className="poke">
-          <div className="pokeContent">
-            <img className="image" src={img} alt={img} onclick={(e)=> handleImage(e.target.src)}/>
+          <div className="pokeContent"> 
+            <img className="image" src={img} alt={img} onClick={(e)=>handleImage(e.target.src)}/>
             <div className="nome">
               <div className="pokemonNome">{info.name}</div>
               <div className="btns">
@@ -114,6 +124,13 @@ function App() {
           </div>
 
           <div className="stats">
+
+            <div className='stats2'>
+              <h3>Hp</h3>
+              <h3>Attack</h3>
+              <h3>Defense</h3>
+              <h3>Speed</h3>
+            </div>
             {
               base.slice(0,3).map((item)=>(
                 <div className="barra"><div className="dados" style={{width: `${item.base_stat}%`,height:"20px"}}></div></div>
@@ -137,8 +154,10 @@ function App() {
         
       }
 
-     
-    </div>
+
+
+     </div>
+  </div>
     
       
   );

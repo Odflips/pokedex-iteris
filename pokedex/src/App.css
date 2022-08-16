@@ -5,6 +5,11 @@
 *{
     padding: 0;
     margin: 0;
+    
+}
+
+body{
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
 }
 
 .fundo{
@@ -13,30 +18,48 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    align-items: center;
+justify-content: center;
+    
+    
+    
+}
+
+.boxlogo{
+    margin-bottom: -30px;
+}
+
+.pokedex{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
+}
+
+
+
+.logopokedex{
+    height: 200px;
+   margin-left: 30%;
 }
 
 .lista{
     width: 20%;
     border: 3px solid black;
-    height: 73%;
+    color: white;
+    height: 700px;
     padding: 20px 0;
     text-align: center;
     font-family: 'DynaPuff', cursive;
     font-size: 26px;
-    background: rgb(33,147,237);
-background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 50%, rgba(174,243,245,1) 100%);
-    
-    
+    background: rgb(255,0,0);
+background: linear-gradient(52deg, rgba(255,0,0,1) 17%, rgba(250,72,72,1) 50%, rgba(255,119,102,1) 100%);
 }
 
 .poke{
     width: 50%;
-    height: 73%;
+    height: 700px;
     border: 3px solid black;
     padding: 20px;
     display: flex;
@@ -49,6 +72,9 @@ background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 5
 .pokeContent{
     width: 50%;
     height: 60%;
+    align-items: center;
+    justify-content: center;
+    
    
 }
 
@@ -56,7 +82,7 @@ background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 5
     height: 250px;
     cursor: pointer;
     transition: transform .5s;
-    margin-left: 100px;
+    margin-left: 25%;
     
 }
 
@@ -68,7 +94,16 @@ background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 5
     width: 50%;
     height: 40%;
     margin-top: 30px;
+   
     
+}
+
+.stats2{
+    position: absolute;
+    width: 100px;
+    top: 65%;
+    font-size: 23px;
+    left: 45%;
 }
 
 .stats .barra{
@@ -76,9 +111,14 @@ background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 5
     margin: 10px 0;
 }
 
+.lista:hover{
+    transition: .5s;
+}
+
 .pokeNome{
     cursor: pointer;
 }
+
 
 .pokeNome:hover{
     background-color: rgba(21, 21, 247, 0.541);
@@ -96,11 +136,13 @@ background: linear-gradient(45deg, rgba(33,147,237,1) 17%, rgba(146,214,249,1) 5
     
     padding: 5px 20px;
     cursor: pointer;
-    
+    background-color: rgb(0, 0, 0);
+    color: white;
     border-top: ridge;
     border-bottom: ridge;
     border-left: ridge;
     border-right: ridge;
+    border-radius: 20px;
     
    
     transition: transform .3s;
