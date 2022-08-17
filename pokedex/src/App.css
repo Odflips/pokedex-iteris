@@ -117,9 +117,11 @@ background: linear-gradient(52deg, rgba(255,0,0,1) 17%, rgba(250,72,72,1) 50%, r
 .stats2{
     position: absolute;
     width: 100px;
-    top: 65%;
+    top: 66%;
     font-size: 23px;
     left: 45%;
+    font-family: 'DynaPuff', cursive;
+    color: rgb(27, 26, 26);
 }
 
 .stats .barra{
