@@ -6,6 +6,7 @@ import Detalhe from './components/Detalhe';
 
 
 
+
 function App() {
 
 
@@ -94,6 +95,8 @@ function App() {
   <div className="fundo" style={{backgroundImage: "url(" + fundo + ")"}}>
 
       <Detalhe />
+
+     
 
      
 
